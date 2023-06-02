@@ -1,0 +1,77 @@
+#third-section + #fourth-section {
+    margin-top: 68%;
+}
+
+#fourth-section {
+    height: 55em;
+    background-color: #075500;
+}
+
+#fourth-section h1 {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    float: right;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 91px;
+    text-align: center;
+    width: 50%;
+    margin-top: 5%;
+}
+
+#fourth-section h2 {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    width: 40%;
+    position: absolute;
+    right: 5%;
+    line-height: 30px;
+    margin-top: 30%;
+    font-size: 26px;
+    text-align: center;
+}
+
+.yellow-color {
+    color: yellow;
+}
+
+.foods {
+    width: 50%;
+}
+
+#fourth-section h3 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    position: absolute;
+    right: 22.3%;
+    top: 440%;
+    color: white;
+}
+
+/*Causas 2*/
+
+#fifth-section img {
+    width: 40%;
+    float: right;
+}
+
+#fifth-section h1 {
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    width: 40%;
+    font-size: 39px;
+    text-align: center;
+    margin-left: 3.5em;
+    position: absolute;
+    top: 475%;
+}
+
+#fifth-section h3 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    position: absolute;
+    top: 515%;
+    left: 20.4%;
+}

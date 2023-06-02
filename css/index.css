@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth
+}
+
+header{
+    position: fixed;
+    color: white;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    gap: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: #27920c .5s ease-out;
+}
+
+.logo-eco {
+    width: 40%;
+}
+
+input{
+    position: relative;
+    height: 60px;
+    width: 150px;
+    border-radius: 30px;
+    font-family: 'Montserrat' solid;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 128, 0, 0);
+    box-shadow: #fff;
+    cursor: pointer;
+}
+
+.container_search{
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+.retangle{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.527);
+    box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.527);
+}
+.text-title{
+    position: absolute;
+    width: 633px;
+    height: 152px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 40px;
+    top: 250px;
+    left: 40px;
+    line-height: 55px;
+}
+.text-title h1{
+    line-height: 75px;
+    font-size: 60px;
+}
+
+.text-title h2 {
+    margin-top: 0.625em;
+}
+
+.login{
+    position: inherit;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 70px;
+    bottom: 250px;
+    /* left: 25px; */
+}
+
+.knew{
+    -webkit-transition: box-shadow 300ms ease-in-out, green 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, green 300ms ease-in-out;
+    margin-top: 1.875em;
+}
+
+.knew:hover{
+    box-shadow: 0 0 40px 40px #27920c inset;
+}
+a:hover{
+    color: #09ff67;
+    text-decoration:overline;
+    text-underline-position: under;
+    text-decoration-color: rgb(164, 209, 0);
+    transition: green .10s ease-out;
+}
+
+

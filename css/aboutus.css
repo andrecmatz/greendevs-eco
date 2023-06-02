@@ -1,0 +1,150 @@
+/* Sobre nós 1 */
+
+.first-title {
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: 'Montserrat';
+    float: right;
+    margin-top: 2.5em;
+    margin-right: 2.5em;
+}
+
+.secondary-title {
+    font-family: 'Montserrat';
+    width: 35%;
+    height: 50%;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    right: 8%;
+    top: 145%;
+    line-height: 1.450em;
+}
+
+.secondary-title2 {
+    font-family: 'Montserrat';
+    width: 35%;
+    height: 50%;
+    font-weight: bold;
+    position: absolute;
+    right: 8%;
+    top: 175%;
+    font-size: 1.5em;
+    line-height: 1.450em;
+}
+
+.secondary-title3 {
+    font-family: 'Montserrat';
+    width: 35%;
+    height: 50%;
+    font-weight: bold;
+    position: absolute;
+    right: 8%;
+    top: 186%;
+    font-size: 1.5em;
+    line-height: 1.450em;
+}
+
+.orange-color {
+    color: #d38c12;
+    font-weight: bold;
+}
+
+/*Sobre nós 2*/
+
+.data {
+    position: relative;
+    top: 10%;
+    left: 22%;
+    width: 55%;
+    height: 24%;
+    padding-bottom: 4em;
+}
+
+.hands {
+    width: 50%;
+    height: 22%;
+    position: relative;
+    top: 10%;
+    left: 24%;
+    padding-bottom: 5em;
+}
+
+.left-card {
+    position: absolute;
+    width: 362px;
+    height: 95%;
+    left: 20%;
+    top: 250%;
+    background: #FFFFFF;
+    border: 5px solid #FF8A00;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-top: -10%;
+}
+
+.left-title {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-top: 1em;
+}
+
+.orange-line {
+    width: 90%;
+    height: 2.5px;
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.left-card h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: justify;
+    padding: 0 2.9em 0;
+    margin-top: 10%
+}
+
+.right-card {
+    background: #FFFFFF;
+    border: 5px solid #075500;
+    border-radius: 15px;
+    width: 362px;
+    height: 95%;
+    position: absolute;
+    right: 20%;
+    top: 250%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-top: -10%;
+}
+
+.right-card h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: justify;
+    padding: 0 2.1em 0;
+    margin-top: 10%
+}
+
+.right-title {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-top: 1em;
+    color: #075500;
+}
+
+.green-line {
+    width: 90%;
+    height: 2.5px;
+    margin-left: 5%;
+    margin-top: 15%;
+}
