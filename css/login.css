@@ -1,0 +1,91 @@
+.img-login{
+    width: 50%;
+}
+.container{
+    background-color: rgb(243, 243, 243) ;
+}
+.card {
+    background-color: #fff;
+    width: 400px;
+    padding: 53px 48px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+
+  .card {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card input[type="email"],
+  .card input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 34px;
+  }
+
+  .card button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: bold;
+  }
+
+  .card button:hover {
+    background-color: #45a049;
+    font-family: 'Montserrat';
+    font-weight: bold;
+  }
+
+  .card .forgot-password {
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .card .create-account {
+    margin-top: 20px;
+    text-align: center;
+    color: #4CAF50;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .card .create-account p{
+    margin-top: 20px;
+    text-align: center;
+    color: #707070;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .checkbox{
+    width: 18px;
+    margin-right: 15px;
+  }
+  .label-checkbox{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+  }
+  p{
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+  }
+  .batata{
+    align-items: center;
+    font-size: 38px;
+    font-family: 'Montserrat';
+    margin: 15% 23%;
+  }

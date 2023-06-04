@@ -112,9 +112,11 @@ a:hover{
 }
 .img-about-primary{
     width: 50%;
+    filter: invert(25%);
 }
 .img-about-secondary{
     width: 50%;
+    filter: invert(25%);
 }
 .display-flex{
     display: flex;
