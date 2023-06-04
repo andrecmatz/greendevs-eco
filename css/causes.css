@@ -52,26 +52,32 @@
 
 /*Causas 2*/
 
-#fifth-section img {
-    width: 40%;
-    float: right;
+.causes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#fifth-section h1 {
+#fifth-section img {
+    width: 40%; 
+}
+
+.paragraphy {
     font-family: 'Montserrat';
     font-weight: bolder;
-    width: 40%;
     font-size: 39px;
     text-align: center;
-    margin-left: 3.5em;
-    position: absolute;
-    top: 475%;
+    margin: 49px;
 }
 
 #fifth-section h3 {
     font-family: 'Montserrat';
     font-weight: bold;
-    position: absolute;
-    top: 515%;
     left: 20.4%;
+}
+.font-causes{
+    font-size: 13px;
+    margin: 5% 0 0 42%;
+    position: absolute;
+    color: rgb(145, 146, 148);
 }
