@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/causes.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/fale-conosco.css">
+    <link rel="stylesheet" href="css/saiba-mais.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bungee+Spice&family=Exo:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,600;1,200&family=Ms+Madi&family=Open+Sans:wght@300;400&family=Poppins:wght@100;400;500;600;700;900&family=Ropa+Sans&display=swap" rel="stylesheet">
@@ -104,10 +106,15 @@
         
     </section>
     <section>
-        <div class="display-flex">
+        <div class="display-flex ">
             <div></div>
             <img class="img-about-primary" src="img/maos-sobrenos.jpeg" alt="algumas mãos unidas">
-            <img class="" src="img/MAOS.png" alt="">
+            <div class="container-icon">
+                <img class="icon-maos" src="img/MAOS.png" alt="">
+            <button>Saiba mais</button>
+
+            </div>
+            
             <img class="img-about-secondary" src="img/maos-sobrenos-verde.jpeg" alt="par de mãos de uma pessoa colhento manjericão">
         </div>
     </section>
@@ -133,7 +140,7 @@
                     <p>
                         Não tem conta?
                     </p>
-                  <a href="#" style="color: #4CAF50;">CRIAR UMA CONTA</a>
+                  <a href="#" class="open-modal" style="color: #4CAF50;">CRIAR UMA CONTA</a>
                 </div>
               </div>
         </div>
@@ -160,4 +167,86 @@
             </div>
           </div>
     </section>
+    <section>
+        <div class="container-modal">
+            <div class="modal">
+              <div class="modal-content">
+                <h2>Criar Conta</h2>
+                <form>
+                  <label for="nome">Nome Completo</label>
+                  <input type="text" id="nome" >
+        
+                  <label for="email">Email</label>
+                  <input type="email" id="email" >
+        
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha" >
+        
+                  <label for="confirmar-senha">Confirme a sua Senha</label>
+                  <input type="password" id="confirmar-senha" >
+        
+                  <label for="telefone">Telefone</label>
+                  <input type="text" id="telefone" >
+        
+                  <label for="endereco">Endereço</label>
+                  <textarea id="endereco" ></textarea>
+        
+                  <div class="checkbox-label">
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Concordo com os termos de uso</label>
+                  </div>
+        
+                  <button type="submit" id="criar-conta-botao">Criar Conta</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        
+          <script>
+            const openModalButton = document.querySelector('.open-modal');
+            const modal = document.querySelector('.modal');
+            const criarContaButton = document.getElementById('criar-conta-botao')
+            const pegarNome = document.getElementById('nome')
+            const mensagemSucesso = document.getElementById('mensagem-sucesso')
+        
+            openModalButton.addEventListener('click', function() {
+              modal.style.display = 'block';
+            });
+        
+            function closeModal() {
+              modal.style.display = 'none';
+            }
+        
+            window.addEventListener('click', function(event) {
+              if (event.target === modal) {
+                closeModal();
+              }
+            });
+
+            function mensagemSucessoCadastro(nome) {
+              mensagemSucesso.textContext = `Parabens, ${nome}! Sua conta foi criada com sucesso.`
+            }
+
+            criarConta.addEventListener('click', function(e){
+                e.preventDefalt();
+
+                const nomeDoCampo = pegarNome.value;
+                mensagemSucessoCadastro(nomeDoCampo)
+            })
+
+            window.addEventListener('click', function(event) {
+                if (event.target === modal || event.target.classList.contains('modal')) {
+                closeModal();
+                }
+            });
+
+            window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.style.display === 'block') {
+                closeModal();
+            }
+            });
+
+          </script>
+    </section>
+
 </html>
