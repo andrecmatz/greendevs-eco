@@ -1,10 +1,19 @@
-.container {
+.container-contact {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: rgb(236 236 236) ;
+    padding: 100px 0;
+  }
+  .p-contact{
+    font-size: 54px;
+    text-align: center;
+    margin-right: 50%;
   }
 
   .card-contact {
     background-color: #fff;
+    width: 400px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -13,21 +22,26 @@
   .card-contact input,
   .card-contact textarea {
     width: 100%;
-    padding: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    height: 34px;
   }
 
   .card-contact textarea {
     height: 150px;
   }
 
+  .card-contact input {
+    height: 34px;
+    margin-bottom: 34px;
+  }
+
   .card-contact button {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
-    background-color: #4CAF50;
+    background-color: #EA6606;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -36,3 +50,6 @@
   .card-contact button:hover {
     background-color: #45a049;
   }
+  .img-contact{
+    width: 50%;
+}
