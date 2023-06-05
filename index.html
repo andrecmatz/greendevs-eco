@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/aboutus.css">
     <link rel="stylesheet" href="css/causes.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/fale-conosco.css">
+    <link rel="stylesheet" href="css/saiba-mais.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/knowmore.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +30,7 @@
                     <li><a href="#fourth-section" >Causas</a></li>
                     <li><a href="#" >Fale conosco</a></li>
                     <li><a href="#">Parceiros</a></li>
-                    <li><a href="#" class="login">Login</a></li>
+                    <li><a href="#login-section" class="login">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -87,18 +92,23 @@
         
         <h2>O levantamento feito pela ONU considera como falta de alimentos quando uma média superior a 2,5% da população enfrenta a falta crônica de alimentos — no Brasil, com 214 milhões de habitantes, a taxa estimada é de 4,1%.</h2>
         
-        <img class="foods" src="img/ALIMENTOS.png" alt="">
+        <img class="foods" src="img/ALIMENTOS.png" alt="um circulo com uma colher e um garfo dentro">
 
         <h3>Fonte: ONU</h3>
     </section>
 
     <section id="fifth-section">
-        <h1>A fome no Brasil é causada por diversos fatores mas, a <span class="orange-color">distribuição desigual de alimentos</span> no território nacional é uma das suas principais causas.</h1>
-
-        <h3>Fonte: uol/fomenoBrasil.com.br</h3>
-
-        <img src="img/BRASIL.png" alt="">
+        <div class="causes">
+            <div>
+                <p class="paragraphy">A fome no Brasil é causada por diversos fatores mas, a <span class="orange-color">distribuição desigual de alimentos</span> no território nacional é uma das suas principais causas.</p>
+                <p class="font-causes">Fonte: uol/fomenoBrasil.com.br</p>
+            </div>
+            <img src="img/BRASIL.png" alt="desenho do mapa do brasil em marrom">
+        </div>
+        
     </section>
+    
+
 
     <section id="sixth-section">
         <h2 class="sixth-text">ONG</h2>
@@ -108,4 +118,181 @@
         <input id="btn2" type="button" value="Saiba mais" class="btn knew" href="#"></input>
         
     </section>
+    <section>
+        <div class="display-flex ">
+            <div></div>
+            <img class="img-about-primary" src="img/maos-sobrenos.jpeg" alt="algumas mãos unidas">
+            <div class="container-icon">
+                <img class="icon-maos" src="img/MAOS.png" alt="">
+            <button>Saiba mais</button>
+
+            </div>
+            
+            <img class="img-about-secondary" src="img/maos-sobrenos-verde.jpeg" alt="par de mãos de uma pessoa colhento manjericão">
+        </div>
+    </section>
+    <section id="login-section">
+        <div class="display-flex container">
+            <img class="img-login" src="img/beterraba.png" alt="Homem de costa no meio de uma platação de beterraba">
+            <div class="card">
+                <p class="batata">Fazer Login</p >
+                <form>
+                  <p>E-mail</p>
+                  <input type="email">
+                  <p>Senha</p>
+                  <input type="password">
+                  <label class="label-checkbox">
+                    <input type="checkbox" class="checkbox"> Permanecer logado
+                  </label>
+                  <button type="submit">Fazer Login</button>
+                  <div class="forgot-password">
+                    <a href="#">Esqueceu a senha?</a>
+                  </div>
+                </form>
+                <div class="create-account">
+                    <p>
+                        Não tem conta?
+                    </p>
+                  <a href="#" class="open-modal" style="color: #4CAF50;">CRIAR UMA CONTA</a>
+                </div>
+              </div>
+        </div>
+            
+    </section>
+    <section >
+        <div class="container-contact">
+            <div class="img-contact">
+              <p class="p-contact">Ficou com dúvida? Entre em contato</p>
+              <img src="img/contact.png" alt="Imagem de contato" class="image">
+            </div>
+            <div class="card-contact">
+              <form>
+                <p>Nome</p>
+                <input type="text" >
+                <p>Sobrenome</p>
+                <input type="text">
+                <p>Email</p>
+                <input type="email">
+                <p>Digite sua mensagem</p>
+                <textarea></textarea>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+    </section>
+    <!-- <section>
+        <div class="container-modal">
+            <div class="modal">
+              <div class="modal-content">
+                <h2>Criar Conta</h2>
+                <form id="formulario">
+                  <label for="nome">Nome Completo</label>
+                  <input type="text" id="nome" >
+        
+                  <label for="email">Email</label>
+                  <input type="email" id="email" >
+        
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha" >
+        
+                  <label for="confirmar-senha">Confirme a sua Senha</label>
+                  <input type="password" id="confirmar-senha" >
+        
+                  <label for="telefone">Telefone</label>
+                  <input type="text" id="telefone" >
+        
+                  <label for="endereco">Endereço</label>
+                  <textarea id="endereco" ></textarea>
+        
+                  <div class="checkbox-label">
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Concordo com os termos de uso</label>
+                  </div>
+        
+                  <button type="submit" id="criar-conta-bnt">Criar Conta</button>
+                </form>
+                <div id="mensagem-cadastro" style="display: none;"></div>
+              </div>
+            </div>
+          </div>
+        
+          <script>
+            const openModalButton = document.querySelector('.open-modal');
+            const modal = document.querySelector('.modal');
+            const formulario = document.getElementById('formulario');
+            const criarContaButton = document.getElementById('criar-conta-btn');
+            const nomeCompletoInput = document.getElementById('nome');
+            const mensagemCadastro = document.getElementById('mensagem-cadastro');
+
+            openModalButton.addEventListener('click', function() {
+            modal.style.display = 'block';
+            });
+
+            function closeModal() {
+            modal.style.display = 'none';
+            }
+
+            criarContaButton.addEventListener('click', function(event) {
+            event.preventDefault(); 
+
+            const nomeCompleto = nomeCompletoInput.value;
+            formulario.style.display = 'none';
+            mensagemCadastro.style.display = 'block';
+            mensagemCadastro.textContent = `Parabéns, ${nomeCompleto}! Você fez o seu cadastro.`;
+
+            });
+
+            console.log(nomeCompleto, "nomeCompleto")
+
+            window.addEventListener('click', function(event) {
+            if (event.target === modal || event.target.classList.contains('modal')) {
+                closeModal();
+            }
+            });
+
+            window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.style.display === 'block') {
+                closeModal();
+            }
+            }); -->
+
+          </script>
+    </section>
+    <footer>
+        <div class="container_header">
+            <div class="container-footer display-flex">
+                <img class="logo-eco-footer" src="img/logo-footer.png" alt="Logo da Eco">
+                <ul>
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#" >Causa</a></li>
+                    <li><a href="#" >funcionalidade</a></li>
+                    <li><a href="#">saiba mais</a></li>
+                    <li><a href="#" class="login">Login</a></li>
+                </ul>
+                <div>
+                    <p>CONTATO</p>
+                    <p>0800 676 55 90</p>
+                    <p>suporte.agri@eco.com.br</p>
+                </div>
+                <div>
+                    <p>PARCEIROS</p>
+                    <div class="display-flex">
+                        <div>
+                            <p>MICROSOFT</p>
+                            <p>COAMO</p>
+                            <p>IFOOD</p>
+                        </div>
+                        <div>
+                            <p>AURORA</p>
+                            <p>AMBEV</p>
+                            <p>SADIA</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </footer>
+  </body>
 </html>

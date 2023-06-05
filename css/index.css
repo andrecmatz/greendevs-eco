@@ -110,5 +110,16 @@ a:hover{
     text-decoration-color: rgb(164, 209, 0);
     transition: green .10s ease-out;
 }
+.img-about-primary{
+    width: 50%;
+    filter: invert(25%);
+}
+.img-about-secondary{
+    width: 50%;
+    filter: invert(25%);
+}
+.display-flex{
+    display: flex;
+}
 
 

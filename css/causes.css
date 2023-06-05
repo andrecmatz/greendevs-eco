@@ -52,15 +52,19 @@
 
 /*Causas 2*/
 
-#fifth-section img {
-    width: 40%;
-    float: right;
+.causes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#fifth-section h1 {
+#fifth-section img {
+    width: 40%; 
+}
+
+.paragraphy {
     font-family: 'Montserrat';
     font-weight: bolder;
-    width: 40%;
     font-size: 39px;
     text-align: center;
     margin-left: 3.5em;
