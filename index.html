@@ -172,7 +172,7 @@
             <div class="modal">
               <div class="modal-content">
                 <h2>Criar Conta</h2>
-                <form>
+                <form id="formulario">
                   <label for="nome">Nome Completo</label>
                   <input type="text" id="nome" >
         
@@ -196,8 +196,9 @@
                     <label for="termos">Concordo com os termos de uso</label>
                   </div>
         
-                  <button type="submit" id="criar-conta-botao">Criar Conta</button>
+                  <button type="submit" id="criar-conta-bnt">Criar Conta</button>
                 </form>
+                <div id="mensagem-cadastro" style="display: none;"></div>
               </div>
             </div>
           </div>
@@ -205,39 +206,35 @@
           <script>
             const openModalButton = document.querySelector('.open-modal');
             const modal = document.querySelector('.modal');
-            const criarContaButton = document.getElementById('criar-conta-botao')
-            const pegarNome = document.getElementById('nome')
-            const mensagemSucesso = document.getElementById('mensagem-sucesso')
-        
+            const formulario = document.getElementById('formulario');
+            const criarContaButton = document.getElementById('criar-conta-btn');
+            const nomeCompletoInput = document.getElementById('nome');
+            const mensagemCadastro = document.getElementById('mensagem-cadastro');
+
             openModalButton.addEventListener('click', function() {
-              modal.style.display = 'block';
+            modal.style.display = 'block';
             });
-        
+
             function closeModal() {
-              modal.style.display = 'none';
+            modal.style.display = 'none';
             }
-        
-            window.addEventListener('click', function(event) {
-              if (event.target === modal) {
-                closeModal();
-              }
+
+            criarContaButton.addEventListener('click', function(event) {
+            event.preventDefault(); 
+
+            const nomeCompleto = nomeCompletoInput.value;
+            formulario.style.display = 'none';
+            mensagemCadastro.style.display = 'block';
+            mensagemCadastro.textContent = `Parabéns, ${nomeCompleto}! Você fez o seu cadastro.`;
+
             });
 
-            function mensagemSucessoCadastro(nome) {
-              mensagemSucesso.textContext = `Parabens, ${nome}! Sua conta foi criada com sucesso.`
-            }
-
-            criarConta.addEventListener('click', function(e){
-                e.preventDefalt();
-
-                const nomeDoCampo = pegarNome.value;
-                mensagemSucessoCadastro(nomeDoCampo)
-            })
+            console.log(nomeCompleto, "nomeCompleto")
 
             window.addEventListener('click', function(event) {
-                if (event.target === modal || event.target.classList.contains('modal')) {
+            if (event.target === modal || event.target.classList.contains('modal')) {
                 closeModal();
-                }
+            }
             });
 
             window.addEventListener('keydown', function(event) {
