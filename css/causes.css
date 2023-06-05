@@ -67,15 +67,21 @@
     font-weight: bolder;
     font-size: 39px;
     text-align: center;
+    margin: 49px;
     margin-left: 3.5em;
-    position: absolute;
-    top: 450%;
 }
 
 #fifth-section h3 {
     font-family: 'Montserrat';
     font-weight: bold;
+    left: 20.4%;
     position: absolute;
     top: 490%;
-    left: 20.4%;
 }
+.font-causes{
+    font-size: 13px;
+    margin: 5% 0 0 42%;
+    position: absolute;
+    color: rgb(145, 146, 148);
+}
+  

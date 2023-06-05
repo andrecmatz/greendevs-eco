@@ -10,37 +10,38 @@
     position: absolute;
     width: 408px;
     height: 76px;
-    left: 60%;
-    top: 540%;
+    left: 64%;
+    top: 639%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 65px;
     line-height: 79px;
     text-align: center;
+    color: #fff;
 }
 
 .sixth-text {
     position: absolute;
     width: 408px;
     height: 76px;
-    right: 60%;
-    top: 540%;
-
+    right: 65.1%;
+    top: 639%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 65px;
     line-height: 79px;
     text-align: center;
+    color: #fff
 }
 
 #sixth-section .img-2 {
     position: absolute;
     width: 150px;
     height: 142px;
-    left: 66.5%;
-    top: 525%;
+    left: 70.5%;
+    top: 626%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -48,8 +49,8 @@
     width: 202px;
     height: 142px;
     position: absolute;
-    top: 525%;
-    right: 65.5%;  
+    top:626%;
+    right: 70.5%;  
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
