@@ -115,6 +115,9 @@ a:hover{
     filter: invert(25%);
     position: absolute;
     top: 603.2%;
+    height: 692px;
+    
+
 }
 .img-about-secondary{
     width: 50%;
@@ -122,6 +125,7 @@ a:hover{
     position: absolute;
     top: 603.2%;
     left: 50%;
+    height: 692px;
 }
 .display-flex{
     display: flex;

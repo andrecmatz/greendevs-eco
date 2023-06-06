@@ -31,3 +31,31 @@ const enviarMensagem = () => {
   alert(successMessage);
 
 }
+//Voltando para home
+function VoltarParaHome() {
+  window.location.href = 'index.html';
+}
+
+
+//lista de parceiros
+document.addEventListener('DOMContentLoaded', function() {
+  //esse DOMContentLoaded é para garantir que esta funçao sera executada apos o carregamento do dom
+  const parceiros = [
+  { id: 1, nome: 'MICROSOFT' },
+  { id: 2, nome: 'COAMO' },
+  { id: 3, nome: 'IFOOD' },
+  ];
+
+  const parceirosContainer = document.getElementById('parceiros-container');
+
+  parceiros.map(parceiro => {
+    const li = document.createElement('p');
+    li.textContent = parceiro.nome;
+    parceirosContainer.appendChild(li);
+  });
+});
+
+//criar cadastro
+document.getElementById('criar-conta-btn').addEventListener('click', function() {
+  alert('Conta criada!');
+});

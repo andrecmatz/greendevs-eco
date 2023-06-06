@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Conta</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      width: 400px;
+    }
+
+    .card input[type="text"],
+    .card input[type="email"],
+    .card input[type="password"],
+    .card input[type="tel"],
+    .card textarea,
+    .card label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .card label.checkbox {
+      display: inline;
+      margin-bottom: 0;
+    }
+
+    .card button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .card button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Criar Conta</h2>
+      <form>
+        <input type="text" placeholder="Nome Completo" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="password" placeholder="Confirme a Senha" required>
+        <input type="tel" placeholder="Telefone" required>
+        <textarea placeholder="Endereço" required></textarea>
+        <label class="checkbox">
+          <input type="checkbox" required>
+          Concordo com os Termos de Uso
+        </label>
+        <button type="submit">Criar Conta</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

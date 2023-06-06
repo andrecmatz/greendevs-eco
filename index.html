@@ -30,8 +30,8 @@
                 <ul>
                     <li><a href="#second-section" >Sobre nós</a></li>
                     <li><a href="#fourth-section" >Causas</a></li>
-                    <li><a href="#" >Fale conosco</a></li>
-                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#faleConosco" >Fale conosco</a></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
                     <li><a onclick="carregarPaginaLogin()" class="login">Login</a></li>
                 </ul>
             </div>
@@ -112,7 +112,7 @@
         </div>
         
     </section>
-    <section >
+    <section id="faleConosco">
         <div class="container-contact">
             <div class="img-contact">
               <p class="p-contact">Ficou com dúvida? Entre em contato</p>
@@ -150,95 +150,14 @@
              </div>
         
     </section>
-    
-    
-    <!-- <section>
-        <div class="container-modal">
-            <div class="modal">
-              <div class="modal-content">
-                <h2>Criar Conta</h2>
-                <form id="formulario">
-                  <label for="nome">Nome Completo</label>
-                  <input type="text" id="nome" >
-        
-                  <label for="email">Email</label>
-                  <input type="email" id="email" >
-        
-                  <label for="senha">Senha</label>
-                  <input type="password" id="senha" >
-        
-                  <label for="confirmar-senha">Confirme a sua Senha</label>
-                  <input type="password" id="confirmar-senha" >
-        
-                  <label for="telefone">Telefone</label>
-                  <input type="text" id="telefone" >
-        
-                  <label for="endereco">Endereço</label>
-                  <textarea id="endereco" ></textarea>
-        
-                  <div class="checkbox-label">
-                    <input type="checkbox" id="termos">
-                    <label for="termos">Concordo com os termos de uso</label>
-                  </div>
-        
-                  <button type="submit" id="criar-conta-bnt">Criar Conta</button>
-                </form>
-                <div id="mensagem-cadastro" style="display: none;"></div>
-              </div>
-            </div>
-          </div>
-        
-          <script>
-            const openModalButton = document.querySelector('.open-modal');
-            const modal = document.querySelector('.modal');
-            const formulario = document.getElementById('formulario');
-            const criarContaButton = document.getElementById('criar-conta-btn');
-            const nomeCompletoInput = document.getElementById('nome');
-            const mensagemCadastro = document.getElementById('mensagem-cadastro');
-
-            openModalButton.addEventListener('click', function() {
-            modal.style.display = 'block';
-            });
-
-            function closeModal() {
-            modal.style.display = 'none';
-            }
-
-            criarContaButton.addEventListener('click', function(event) {
-            event.preventDefault(); 
-
-            const nomeCompleto = nomeCompletoInput.value;
-            formulario.style.display = 'none';
-            mensagemCadastro.style.display = 'block';
-            mensagemCadastro.textContent = `Parabéns, ${nomeCompleto}! Você fez o seu cadastro.`;
-
-            });
-
-            console.log(nomeCompleto, "nomeCompleto")
-
-            window.addEventListener('click', function(event) {
-            if (event.target === modal || event.target.classList.contains('modal')) {
-                closeModal();
-            }
-            });
-
-            window.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && modal.style.display === 'block') {
-                closeModal();
-            }
-            }); -->
-
-          </script>
-    </section>
-    <footer>
+    <footer id="parceiros">
         <div class="container_header">
             <div class="container-footer display-flex">
                 <img class="logo-eco-footer" src="img/logo-footer.png" alt="Logo da Eco">
-                <ul>
-                    <li><a href="#" >Home</a></li>
+                <ul class="padding-50">
+                    <li><a href="#" onclick="VoltarParaHome()">Home</a></li>
                     <li><a href="#" >Causa</a></li>
                     <li><a href="#" >funcionalidade</a></li>
-                    <li><a href="#">saiba mais</a></li>
                     <li><a href="#" class="login">Login</a></li>
                 </ul>
                 <div>
@@ -246,19 +165,10 @@
                     <p>0800 676 55 90</p>
                     <p>suporte.agri@eco.com.br</p>
                 </div>
-                <div>
+                <div class="padding-50">
                     <p>PARCEIROS</p>
-                    <div class="display-flex">
-                        <div>
-                            <p>MICROSOFT</p>
-                            <p>COAMO</p>
-                            <p>IFOOD</p>
-                        </div>
-                        <div>
-                            <p>AURORA</p>
-                            <p>AMBEV</p>
-                            <p>SADIA</p>
-                        </div>
+                    <div class="display-flex" >
+                            <p id="parceiros-container"></p>
                     </div>
                 </div>
                 
