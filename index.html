@@ -32,7 +32,7 @@
                     <li><a href="#fourth-section" >Causas</a></li>
                     <li><a href="#" >Fale conosco</a></li>
                     <li><a href="#">Parceiros</a></li>
-                    <li><a onclick="carregarPagina2()" class="login">Login</a></li>
+                    <li><a onclick="carregarPaginaLogin()" class="login">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -120,15 +120,15 @@
             </div>
             <div class="card-contact">
               <form>
-                <p>Nome</p>
-                <input type="text" >
-                <p>Sobrenome</p>
-                <input type="text">
-                <p>Email</p>
-                <input type="email">
+                <p for="firstName">Nome</p>
+                <input type="text" id="firstName" name="firstName">
+                <p for="lastName">Sobrenome</p>
+                <input type="text" id="lastName" name="lastName">
+                <p for="email">Email</p>
+                <input type="email" id="email" name="email">
                 <p>Digite sua mensagem</p>
-                <textarea></textarea>
-                <button type="submit">Enviar</button>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit" onclick="enviarMensagem()">Enviar</button>
               </form>
             </div>
           </div>

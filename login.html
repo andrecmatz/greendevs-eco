@@ -31,7 +31,7 @@
                     <li><a href="#fourth-section" >Causas</a></li>
                     <li><a href="#" >Fale conosco</a></li>
                     <li><a href="#">Parceiros</a></li>
-                    <li><a onclick="carregarPagina2()" class="login">Login</a></li>
+                    <li><a class="login">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -41,20 +41,21 @@
     <div class="display-flex container">
         <img class="img-login" src="img/beterraba.png" alt="Homem de costa no meio de uma platação de beterraba">
         <div class="card">
-            <p class="batata">Fazer Login</p >
-            <form>
-              <p>E-mail</p>
-              <input type="email">
-              <p>Senha</p>
-              <input type="password">
-              <label class="label-checkbox">
-                <input type="checkbox" class="checkbox"> Permanecer logado
-              </label>
-              <button type="submit">Fazer Login</button>
-              <div class="forgot-password">
-                <a href="#">Esqueceu a senha?</a>
-              </div>
-            </form>
+            
+            <a class="batata" value="Preencher Campos" >Fazer Login</a >
+                <form id="myForm">
+                    <p for="email">E-mail:</p>
+                    <input type="email" id="email" name="email">
+                    <p for="password">Senha:</p>
+                    <input type="password" id="password" name="password">
+                    <p class="label-checkbox">
+                      <input type="checkbox" class="checkbox"> Permanecer logado
+                    </p>
+                    <button type="button" onclick="preencherCampo()">Fazer Login</button>
+                    <div class="forgot-password">
+                      <a href="#">Esqueceu a senha?</a>
+                    </div>
+                  </form>
             <div class="create-account">
                 <p>
                     Não tem conta?
