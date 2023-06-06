@@ -16,21 +16,18 @@
     font-size: 70px;
     line-height: 91px;
     text-align: center;
-    width: 50%;
-    margin-top: 5%;
+    margin-top: 11%;
+    margin-bottom: 100px;
 }
 
 #fourth-section h2 {
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
-    width: 40%;
-    position: absolute;
-    right: 5%;
     line-height: 30px;
-    margin-top: 30%;
     font-size: 26px;
     text-align: center;
+    margin: 20%;
 }
 
 .yellow-color {
@@ -59,7 +56,7 @@
 }
 
 #fifth-section img {
-    width: 40%; 
+    width: 85%; 
 }
 
 .paragraphy {
@@ -80,8 +77,11 @@
 }
 .font-causes{
     font-size: 13px;
-    margin: 5% 0 0 42%;
+    margin: 5% 0 0 46%;
     position: absolute;
     color: rgb(145, 146, 148);
+}
+.foto{
+    width:2000px;
 }
   
