@@ -59,3 +59,15 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('criar-conta-btn').addEventListener('click', function() {
   alert('Conta criada!');
 });
+
+// scroll com fundo
+window.addEventListener('scroll', function() {
+  var header = document.getElementById('main-header');
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+      header.classList.add('fixed-header');
+  } else {
+      header.classList.remove('fixed-header');
+  }
+});

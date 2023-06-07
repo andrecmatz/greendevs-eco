@@ -87,9 +87,10 @@
   }
   .batata{
     align-items: center;
-    font-size: 38px;
+    font-size: 24px;
     font-family: 'Montserrat';
-    margin: 15% 23%;
+    margin: 0 29%;
+    color: #000;
   }
   form{
     padding: 32px;

@@ -1,0 +1,59 @@
+.criar-conta{
+      
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container-criar {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .container input,
+  .container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .container button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .container button:hover {
+    background-color: #cc0000;
+  }
+
+  .container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .container .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .container .checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+  }

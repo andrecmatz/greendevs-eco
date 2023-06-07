@@ -1,3 +1,5 @@
-Repositório em relação ao ECO da GS.
+Olá! Realizamos este projeto na resolução de 1880x956. Até o momento, não nos foi ensinado responsividade. Portanto, o site pode apresentar quebras dependendo da resolução em que o mesmo for aberto.
 
-OBS: Nayla e Karen, o arquivo do vídeo é pesado demais para o GitHub. Lembrem-se que é necessário a pasta para que o site rode normalmente. A pasta estará no nosso grupo do whats. 
+Att. GreenDevs
+
+NOME DO TXT: AVISO
